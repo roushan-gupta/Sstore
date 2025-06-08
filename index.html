@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery website</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Sstore</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">reviews</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img class="image" src="images/cart-image-1.png" alt="">
+                <div class="content">
+                    <h3>bread</h3>
+                    <span class="price">Rs. 20</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img class="image" src="images/cart-image-2.png" alt="">
+                <div class="content">
+                    <h3>kurkure</h3>
+                    <span class="price">Rs. 5</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img class="image" src="images/cart-image-3.png" alt="">
+                <div class="content">
+                    <h3>carry bag</h3>
+                    <span class="price">Rs. 40</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total">total : Rs. 65</div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+     <section class="home" id="home">
+        <div class="content">
+            <h3>fresh and <span>organic</span> products</h3>
+            <p>At Sonu Kirana Store, we bring you the finest selection of household groceries and daily-use items — all at affordable prices! Whether it’s mustard oil, pulses, bread, Kurkure, or other everyday needs, we stock everything to keep your kitchen full and your family happy.</p>
+            <a href="#products" class="btn">shop now</a>
+        </div>
+     </section>
+     <!-- home section ends -->
+
+     <!-- feature section starts -->
+      <section class="features" id="features">
+        <h1 class="heading">our <span>features</span></h1>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <img src="/images/feature-img-1.png" alt="">
+                <h3>fresh products</h3>
+                <p>Looking for fresh, high-quality groceries at great prices? Come to Sonu Kirana Store, your trusted neighborhood shop.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/feature-img-2.png" alt="">
+                <h3>free delivery</h3>
+                <p>Get all your daily essentials delivered to your home – fresh, fast, and free!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/feature-img-3.png" alt="">
+                <h3>easy payment</h3>
+                <p> Easy Payment Options – Cash, UPI, QR Code & More!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+      </section>
+      <!-- feature section ends -->
+
+      <!-- product section starts -->
+      <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="/images/product1.png" alt="">
+                    <h3>Bread</h3>
+                    <div class="price">Rs. 20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                
+
+                <div class="swiper-slide box">
+                    <img src="/images/product2.png" alt="">
+                    <h3>Kurkure</h3>
+                    <div class="price">Rs. 5</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/product3.png" alt="">
+                    <h3>Carry Bag</h3>
+                    <div class="price">Rs. 40/pack</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/product4.png" alt="">
+                    <h3>Chocolate</h3>
+                    <div class="price">Rs. 5</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="/images/product5.png" alt="">
+                    <h3>Pulse</h3>
+                    <div class="price">Rs. 80</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                
+
+                <div class="swiper-slide box">
+                    <img src="/images/product6.png" alt="">
+                    <h3>Masala</h3>
+                    <div class="price">Rs. 5</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/product7.png" alt="">
+                    <h3>Oil</h3>
+                    <div class="price">Rs. 50</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/product8.png" alt="">
+                    <h3>Cold Drink</h3>
+                    <div class="price">Rs. 20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- product section ends -->
+
+      <!-- categories section starts -->
+        <section class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/cart1.png" alt="">
+                <h3>masala</h3>
+                <p>upto 40% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="images/cart2.png" alt="">
+                <h3>kurkure</h3>
+                <p>upto 40% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="images/cart3.png" alt="">
+                <h3>cold drink</h3>
+                <p>upto 40% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="images/cart4.png" alt="">
+                <h3>chocolates</h3>
+                <p>upto 40% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+       </section>
+      <!-- categories section ends -->
+
+      <!-- review section starts -->
+       <section class="review" id="review">
+            <h1 class="heading">customer's <span>review</span></h1>
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box">
+                        <img src="images/review1.jpg" alt="">
+                        <p>“Sonu Kirana Store is my go-to place for groceries. The products are always fresh, and the staff is really polite. I love the free home delivery service – super convenient!”</p>
+                        <h3>Roushan Kumar</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/review2.jpg" alt="">
+                        <p>“They have everything I need – from pulses to snacks. Prices are reasonable and they accept UPI, which makes payment really easy. Highly recommended!”</p>
+                        <h3>Sunita Devi</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/review3.jpeg" alt="">
+                        <p>“Best kirana store in the area! Clean shop, quality products, and timely delivery. The bread and oil are always fresh. Great experience every time.”</p>
+                        <h3>Sonu Kesari</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+      <!-- review section ends -->
+       
+       <!-- blogs section starts -->
+       <section class="blogs" id="blogs">
+            <h1 class="heading">our <span>blogs</span></h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="images/blog1.png" alt="">
+                    <div class="content">
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-user"></i>by user</a>
+                            <a href="#"><i class="fas fa-calendar"></i>08 jun, 2025</a>
+                        </div>
+                        <h3>fresh and organic </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, tempore.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/blog2.png" alt="">
+                    <div class="content">
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-user"></i>by user</a>
+                            <a href="#"><i class="fas fa-calendar"></i>08 jun, 2025</a>
+                        </div>
+                        <h3>fresh and organic </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, tempore.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/blog3.png" alt="">
+                    <div class="content">
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-user"></i>by user</a>
+                            <a href="#"><i class="fas fa-calendar"></i>08 jun, 2025</a>
+                        </div>
+                        <h3>fresh and organic </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, tempore.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+            </div>
+       </section>
+       <!-- blogs section ends -->
+
+       <!-- footer section starts -->
+        <footer>
+            <div class="box-container">
+                <div class="box">
+                    <h3><i class="fas fa-shopping-basket"></i>Sstore</h3>
+                    <p>🛒 Welcome to Sonu Kirana Store! <br> Your One-Stop Destination for Daily Essentials!</p>
+                    <div class="share">
+                        <a href="https://www.facebook.com/sonu.keshari.39142072" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/sonukeshari_/" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://wa.me/9572949878" class="fab fa-whatsapp" target="_blank"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+91 9572949878</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+91 9801420603</a>
+                    <a href="http://mailto:roushankumar.mohania@gmail.com" class="links"><i class="fas fa-envelope"></i>roushankumar.mohania@gmail.com</a>
+                    <a href="https://maps.app.goo.gl/DMLKqq6PzywJSU7x6" target="_blank" class="links"><i class="fas fa-map-marker-alt"></i>maniji katra, mohania, kaimur (bihar) - 821109</a>
+                </div>
+                
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                    <a href="#features" class="links"><i class="fas fa-arrow-right"></i>features</a>
+                    <a href="#products" class="links"><i class="fas fa-arrow-right"></i>products</a>
+                    <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+                    <a href="#review" class="links"><i class="fas fa-arrow-right"></i>review</a>
+                    <a href="#blogs" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+                </div>
+
+                <div class="box">
+                    <h3>news letters</h3>
+                    <p>subscribe for latest updates</p>
+                    <input type="email" placeholder="type email here" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                    <img src="images/payment.png" alt="" class="payment">
+                </div>
+
+            </div>
+
+            <div class="credit">created by <span>Roushan kumar</span> | all rights reserved </div>
+        </footer>
+       <!-- footer section ends -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
